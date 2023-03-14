@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <div class="links">
+        <a href="{{ url_for('connexion') }}" class="active">Login</a>
+        <a href="#">inscription</a>
+    </div>
+    <div id="form">
+        <form action="{{url_for('insert')}}" method="POST" class="container">
+            <h1 style="text-align:center;color:white;" >CR&#201;ATION DE COMPTE</h1>
+            <label for="">Nom utilisateur</label>
+            <input type="text" name="pseudo" id="" placeholder="Entrez votre pseudo"><br><br>
+            <label for="">Email</label>
+            <input type="email" name="mail" id="" placeholder="Entrez votre mail">
+            <label for="">Mot de passe</label>
+            <input type="password" name="mdp" id="" placeholder="Entrez votre mot de passe"><br><br>
+            <label for="">Confirmer mot de passe</label>
+            <input type="password" name="mdpc" id="" placeholder="Confirmez votre mot de passe"><br><br>
+            <input type="submit" value="S'inscrire">
+        </form>
+    </div>
+</body>
+</html>

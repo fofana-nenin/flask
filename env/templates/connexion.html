@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styl.css')}}">
+</head>
+<body>
+    <div id="form">
+        <form action="{{url_for('connexion')}}" method="POST" class="container">
+            <h1 style="text-align:center;color:white;" >CONNEXION</h1>
+            <label for="">Email</label>
+            <input type="email" name="mail" id="" placeholder="Entrez votre mail">
+            <label for="">Mot de passe</label>
+            <input type="password" name="mdp" id="" placeholder="Entrez votre mot de passe"><br><br>
+            <input type="submit" value="Se connecter">
+        </form>
+    </div>
+</body>
+</html>
